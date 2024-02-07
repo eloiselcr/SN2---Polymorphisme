@@ -93,8 +93,16 @@
     <QtRcc Include="polymorphisme.qrc" />
     <QtUic Include="polymorphisme.ui" />
     <QtMoc Include="polymorphisme.h" />
+    <ClCompile Include="basehumainform.cpp" />
+    <ClCompile Include="Humain.cpp" />
     <ClCompile Include="polymorphisme.cpp" />
     <ClCompile Include="main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="basehumainform.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Humain.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
