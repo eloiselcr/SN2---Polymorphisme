@@ -209,12 +209,19 @@
      </layout>
     </item>
     <item>
-     <widget class="QWidget" name="widget" native="true">
+     <widget class="BaseHumainForm" name="widget" native="true">
       <property name="minimumSize">
        <size>
         <width>0</width>
         <height>300</height>
        </size>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="okBtn">
+      <property name="text">
+       <string>OK</string>
       </property>
      </widget>
     </item>
@@ -264,6 +271,14 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>BaseHumainForm</class>
+   <extends>QWidget</extends>
+   <header>basehumainform.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources>
   <include location="polymorphisme.qrc"/>
  </resources>

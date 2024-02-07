@@ -94,6 +94,8 @@
     <QtUic Include="polymorphisme.ui" />
     <QtMoc Include="polymorphisme.h" />
     <ClCompile Include="basehumainform.cpp" />
+    <ClCompile Include="EtudiantForm.cpp" />
+    <ClCompile Include="Form.cpp" />
     <ClCompile Include="Humain.cpp" />
     <ClCompile Include="polymorphisme.cpp" />
     <ClCompile Include="main.cpp" />
@@ -102,6 +104,8 @@
     <QtMoc Include="basehumainform.h" />
   </ItemGroup>
   <ItemGroup>
+    <QtMoc Include="Form.h" />
+    <QtMoc Include="EtudiantForm.h" />
     <ClInclude Include="Humain.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
