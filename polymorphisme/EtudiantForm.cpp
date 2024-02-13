@@ -1,7 +1,9 @@
 #include "EtudiantForm.h"
 
-void EtudiantForm::generateForm(QLayout* container)
+void EtudiantForm::generateForm(QWidget * parent, QLayout* container)
 {
+
+    Form::generateForm(parent, container);
 
     QLayout* topLayout = new QHBoxLayout();
     addAllocatedObject(topLayout);
@@ -22,5 +24,13 @@ void EtudiantForm::generateForm(QLayout* container)
     classeComboBox = new QComboBox();
     bottomLayout->addWidget(classeComboBox);
     addAllocatedObject(classeComboBox);
+
+    labelMatiere->setParent(parent);
+    matiereNoteTableView->setParent(parent);
+    classeComboBox->setParent(parent);
+
+    labelMatiere->show();
+    matiereNoteTableView->show();
+    classeComboBox->show();
 
 }

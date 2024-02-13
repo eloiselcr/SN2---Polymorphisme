@@ -52,6 +52,12 @@
     <ClCompile Include="EtudiantForm.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Etudiant.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ActiveForm.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <QtMoc Include="basehumainform.h">
@@ -66,6 +72,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Humain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Etudiant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ActiveForm.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

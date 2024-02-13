@@ -15,6 +15,6 @@ class EtudiantForm :
 
 
 public:
-    virtual void generateForm(QLayout* container);
+    virtual void generateForm(QWidget* parent, QLayout* container);
 };
 

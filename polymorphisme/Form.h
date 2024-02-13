@@ -6,7 +6,10 @@ class Form :
     public QObject
 {
     Q_OBJECT
-        QList<QObject*> allocatedObjects;
+    
+    QList<QObject*> allocatedObjects;
+    QLayout* parentLayout;
+
 
 protected:
     void addAllocatedObject(QObject* obj);
@@ -14,7 +17,7 @@ protected:
 public:
     Form(QObject* parent = nullptr);
     virtual ~Form();
-    virtual void generateForm(QLayout* container) = 0;
+    virtual void generateForm(QWidget* parent, QLayout* container);
 
 };
 

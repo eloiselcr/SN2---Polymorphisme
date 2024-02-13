@@ -2,16 +2,20 @@
 #include <qwidget.h>
 #include <qlayout.h>
 #include "Humain.h"
+#include "EtudiantForm.h"
+#include "ActiveForm.h"
 
 class BaseHumainForm :
     public QWidget
 {
     Q_OBJECT
-        QVBoxLayout* containerLayout;
+    
+    QVBoxLayout* containerLayout;
+    Form* form;
 
 public:
     BaseHumainForm(QWidget* parent = nullptr);
-    void display(Humain* humain);
+    void display(ActiveForm formMode);
 
 };
 

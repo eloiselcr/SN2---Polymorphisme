@@ -93,7 +93,9 @@
     <QtRcc Include="polymorphisme.qrc" />
     <QtUic Include="polymorphisme.ui" />
     <QtMoc Include="polymorphisme.h" />
+    <ClCompile Include="ActiveForm.cpp" />
     <ClCompile Include="basehumainform.cpp" />
+    <ClCompile Include="Etudiant.cpp" />
     <ClCompile Include="EtudiantForm.cpp" />
     <ClCompile Include="Form.cpp" />
     <ClCompile Include="Humain.cpp" />
@@ -106,6 +108,8 @@
   <ItemGroup>
     <QtMoc Include="Form.h" />
     <QtMoc Include="EtudiantForm.h" />
+    <ClInclude Include="ActiveForm.h" />
+    <ClInclude Include="Etudiant.h" />
     <ClInclude Include="Humain.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
